@@ -1,0 +1,38 @@
+#tasks-board {
+  background-color: white;
+  height: 30rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 90%;
+}
+
+#add-todo-btn {
+  margin: 0.8rem 0 0.8rem 0;
+}
+
+.task {
+  list-style-position: inside;
+  padding: 1rem;
+  border: 0.15rem solid black;
+  text-align: left;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 0;
+}
+
+.task p {
+  display: inline;
+  justify-self: right;
+}
+
+.task-icons {
+  cursor: pointer;
+  font-size: 1.3rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.task-icons ion-icon {
+  margin-right: 5px;
+}

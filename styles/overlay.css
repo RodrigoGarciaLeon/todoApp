@@ -1,0 +1,34 @@
+.modal {
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  padding: 2rem 8rem;
+  border-radius: 1rem;
+  display: none;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  display: none;
+}
+
+#task-name-input {
+  margin-top: 1rem;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  border-color: black;
+}
+
+.cancel-btn {
+  border: none;
+}
+
+#overlay-btns {
+  margin-top: 10px;
+  display: flex;
+}

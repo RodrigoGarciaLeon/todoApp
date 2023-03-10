@@ -4,7 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/task-board.css" />
+    <link rel="stylesheet" href="/styles/overlay.css">
+    <link rel="stylesheet" href="styles/shared.css">
+    <script src="/scripts/tasks.js" defer></script>
+    <script src="/scripts/variables.js" defer></script>
     <title>To do app</title>
   </head>
-  <body></body>
+  <body>
+    <div class="backdrop"></div>
+    <aside class="modal" id="add-task-overlay">
+      <div><h1>Escribe la tarea</h1>
+      <form action="">
+        <input 
+        type="text" 
+        name="task-name" 
+        id="task-name-input"
+        placeholder="Tirar la basura">
+        <div id="overlay-btns">
+        <button type="reset" class="btn outline-btn cancel-btn" >Cancel</button>
+        <button type="submit" class="btn filled-btn">Confirm</button>
+      </div>
+      </form>
+      </div>
+    </aside>
+    <aside class="modal" id="edit-task-overlay">
+      <div><h1>Editar tarea</h1>
+      <form action="">
+        <input 
+        type="text" 
+        name="task-name" 
+        id="task-name-input"
+        placeholder="Tirar la basura">
+        <div id="overlay-btns">
+        <button type="reset" class="btn outline-btn cancel-btn" >Cancel</button>
+        <button type="submit" class="btn filled-btn">Confirm</button>
+      </div>
+      </form>
+      </div>
+    </aside>
+    <div id="tasks-board">
+      <h1>What's your plan for today?</h1>
+      <button class="btn outline-btn" id="add-todo-btn">+ Add Todo</button>
+      <ol>
+        <li class="task">
+          <p>Mathemtic tasks</p>
+          <span class="task-icons">
+            <ion-icon name="trash-outline"></ion-icon>
+            <ion-icon name="pencil-outline" id="edit-task-name-btn"></ion-icon>
+          </span>
+        </li>
+        </li>
+      </ol>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
